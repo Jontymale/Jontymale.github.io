@@ -1,2 +1,2 @@
-# Jontymale.github.io
+# Jontymale.com
 Jonty Male’s Personal Website
