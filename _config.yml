@@ -1,3 +1,8 @@
-theme: jekyll-theme-minimal
 title: Jonty Male
 description: Where I put my stuff.
+url: "https://jontymale.com"
+
+# The site is hand-written HTML/CSS (index.html, assets/css/style.css),
+# so no Jekyll theme is used.
+exclude:
+  - README.md
