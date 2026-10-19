@@ -12,9 +12,8 @@ marked with an `<!-- EDIT -->` comment, and placeholder text is in
 
 - **Research & Projects**: each box is one `<li class="card">` block.
   Copy one to add another; the grid reflows on its own.
-- **Photo**: save it as `assets/img/portrait.jpg` (a 3:4 portrait crop
-  works best) and swap the placeholder `<div>` for the `<img>` line given
-  in the comment above it.
+- **Photo**: replace `assets/img/portrait.jpg` with a 3:4 portrait crop
+  (900×1200 is plenty). Strip location metadata before committing.
 - **Colours and fonts**: the variables at the top of
   `assets/css/style.css`.
 
