@@ -20,9 +20,8 @@
   <a class="skip-link" href="#main">Skip to content</a>
 
   <div class="wrap">
-    <header class="masthead">
-      <h1 class="wordmark"><a href="/">Jonty Male</a></h1>
-      <hr class="ornament" aria-hidden="true">
+    <header class="site-header">
+      <a class="wordmark" href="/">Jonty <em>Male</em></a>
       <nav class="site-nav" aria-label="Primary">
         <ul>
           <li><a href="#top" aria-current="page">Home</a></li>
@@ -35,32 +34,33 @@
     <main id="main">
       <!-- Intro ============================================================ -->
       <section class="intro" aria-label="About">
-        <div class="intro-text">
-          <!-- EDIT: tagline -->
-          <p class="tagline label">Category Theory<span class="sep" aria-hidden="true">·</span>Logic<span class="sep" aria-hidden="true">·</span>Systems</p>
-
-          <!-- EDIT: bio. The first paragraph is set large as the lead. -->
-          <p class="lead">Logician and researcher interested in reasoning, modelling and systems.</p>
-          <p>Looking for new positions for 2027, PhDs and research fellowships.</p>
-
-          <!-- EDIT: links. Add or remove <li> items as needed. -->
-          <ul class="links">
-            <li><a class="button button--solid" href="mailto:jontymale@gmail.com">Email</a></li>
-            <li><a class="button" href="https://www.linkedin.com/in/jontymale/" rel="me">LinkedIn</a></li>
-            <!-- <li><a class="button" href="https://github.com/jontymale" rel="me">GitHub</a></li> -->
-          </ul>
-        </div>
-
         <figure class="portrait">
           <!-- EDIT: to change the photo, replace assets/img/portrait.jpg (3:4 portrait crop) -->
           <img src="/assets/img/portrait.jpg" alt="Jonty Male by a canal outside the Venetian Arsenal" width="900" height="1200" fetchpriority="high">
           <figcaption>Manchester, United Kingdom</figcaption>
         </figure>
+
+        <div class="intro-text">
+          <h1>Jonty Male</h1>
+          <!-- EDIT: tagline -->
+          <p class="tagline label">Category Theory<span class="sep" aria-hidden="true">·</span>Logic<span class="sep" aria-hidden="true">·</span>Systems</p>
+
+          <!-- EDIT: bio -->
+          <p>Logician and researcher interested in reasoning, modelling and systems. </p>
+          <p>Looking for new positions for 2027, PhDs and research fellowships.</p>
+
+          <!-- EDIT: links. Add or remove <li> items as needed. -->
+          <ul class="links">
+            <li><a class="button" href="mailto:jontymale@gmail.com">Email</a></li>
+            <li><a class="button" href="https://www.linkedin.com/in/jontymale/" rel="me">LinkedIn</a></li>
+            <!-- <li><a class="button" href="https://github.com/jontymale" rel="me">GitHub</a></li> -->
+          </ul>
+        </div>
       </section>
 
-      <!-- I. Research & projects =========================================== -->
-      <section class="section" id="research" aria-labelledby="research-title">
-        <h2 class="section-title" id="research-title"><span class="numeral" aria-hidden="true">I.</span> Research &amp; Projects</h2>
+      <!-- Research & projects ============================================== -->
+      <section class="section" id="research" aria-labelledby="research-label">
+        <h2 class="label" id="research-label">Research &amp; Projects</h2>
 
         <!-- EDIT: one <li class="card"> per interest or project. The grid
              reflows on its own, so add or remove as many as you like. -->
@@ -88,63 +88,54 @@
         </ul>
       </section>
 
-      <!-- II. CV =========================================================== -->
-      <section class="section" id="cv" aria-labelledby="cv-title">
-        <h2 class="section-title" id="cv-title"><span class="numeral" aria-hidden="true">II.</span> Curriculum Vitae</h2>
+      <!-- CV =============================================================== -->
+      <section class="section" id="cv" aria-labelledby="cv-label">
+        <h2 class="label" id="cv-label">Curriculum Vitae</h2>
 
-        <div class="cv-block">
-          <h3 class="label">Education</h3>
-          <!-- EDIT: dates -->
-          <ol class="cv-list">
-            <li>
-              <p class="date">2026 – 2027</p>
-              <div>
+        <div class="cv-grid">
+          <div>
+            <h3>Education</h3>
+            <!-- EDIT: dates -->
+            <ol class="cv-list">
+              <li>
+                <p class="date">2026 – 2027</p>
                 <p class="title">MSc Pure Mathematics and Mathematical Logic</p>
                 <p class="place">University of Manchester</p>
-              </div>
-            </li>
-            <li>
-              <p class="date">2022 – 2025</p>
-              <div>
+              </li>
+              <li>
+                <p class="date">2022 – 2025</p>
                 <p class="title">BSc Mathematics</p>
                 <p class="place">University of Manchester</p>
-              </div>
-            </li>
-          </ol>
-        </div>
+              </li>
+            </ol>
+          </div>
 
-        <div class="cv-block">
-          <h3 class="label">Experience</h3>
-          <!-- EDIT: roles and dates -->
-          <ol class="cv-list">
-            <li>
-              <p class="date">November 2025 – February 2026</p>
-              <div>
+          <div>
+            <h3>Experience</h3>
+            <!-- EDIT: roles and dates -->
+            <ol class="cv-list">
+              <li>
+                <p class="date">November 2025 – February 2026</p>
                 <p class="title">Dovetail Research Fellow</p>
                 <p class="place">Advanced Research + Invention Agency (ARIA)</p>
-              </div>
-            </li>
-            <li>
-              <p class="date">June 2025 – November 2025</p>
-              <div>
+              </li>
+              <li>
+                <p class="date">June 2025 – November 2025</p>
                 <p class="title">Data Scientist</p>
                 <p class="place">BAE Systems</p>
-              </div>
-            </li>
-            <li>
-              <p class="date">June 2024 – September 2024</p>
-              <div>
+              </li>
+              <li>
+                <p class="date">June 2024 – September 2024</p>
                 <p class="title">AI Researcher</p>
                 <p class="place">DSTL</p>
-              </div>
-            </li>
-          </ol>
+              </li>
+            </ol>
+          </div>
         </div>
       </section>
     </main>
 
     <footer class="site-footer">
-      <hr class="ornament" aria-hidden="true">
       <p>Jonty Male</p>
     </footer>
   </div>
