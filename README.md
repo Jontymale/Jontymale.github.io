@@ -1,8 +1,9 @@
 # Jontymale.com
 Jonty Male’s Personal Website
 
-A single-page academic homepage in a dark academia palette (black and
-mahogany, white text), served by GitHub Pages at <https://jontymale.com>.
+A single-page academic homepage in a dark academia palette (espresso and
+walnut browns, tobacco accents, parchment text), served by GitHub Pages at
+<https://jontymale.com>.
 
 ## Editing
 
@@ -24,7 +25,7 @@ marked with an `<!-- EDIT -->` comment, and placeholder text is in
 | `index.html` | Home page |
 | `404.html` | Not-found page |
 | `assets/css/style.css` | All styling |
-| `assets/fonts/` | Self-hosted Cormorant Garamond, EB Garamond and DM Mono (SIL OFL) |
+| `assets/fonts/` | Self-hosted Fraunces and Newsreader (SIL OFL) |
 | `CNAME` | Custom domain (`jontymale.com`) |
 
 ## Preview locally

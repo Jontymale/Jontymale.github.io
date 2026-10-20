@@ -1,54 +1,49 @@
 /* ==========================================================================
    jontymale.com — dark academia
-   Black and mahogany, white text. Layout follows a minimal academic
-   homepage: wordmark + nav, portrait + bio, research cards, CV, footer.
+   Espresso and walnut browns, tobacco accents, parchment text.
+   Centred title-page masthead, numbered chapters, arched portrait,
+   rounded research cards, ledger-style CV.
    ========================================================================== */
 
-/* Fonts — self-hosted, SIL Open Font License (see assets/fonts/OFL-*.txt) */
-@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-garamond-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-garamond-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-garamond-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Cormorant Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/cormorant-garamond-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/cormorant-garamond-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "Cormorant Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/cormorant-garamond-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+/* Fonts — self-hosted, SIL Open Font License (see assets/fonts/OFL-*.txt)
+   Fraunces (variable: weight + optical size) for display; Newsreader for text. */
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../fonts/fraunces-latin-opsz-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: normal; font-weight: 100 900; font-display: swap; src: url("../fonts/fraunces-latin-ext-opsz-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/fraunces-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/fraunces-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
-@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/eb-garamond-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/eb-garamond-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/eb-garamond-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/eb-garamond-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/eb-garamond-latin-500-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: 500; font-display: swap; src: url("../fonts/eb-garamond-latin-ext-500-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
-
-@font-face { font-family: "DM Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/dm-mono-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-@font-face { font-family: "DM Mono"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/dm-mono-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/newsreader-latin-400-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 400; font-display: swap; src: url("../fonts/newsreader-latin-ext-400-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/newsreader-latin-400-italic.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Newsreader"; font-style: italic; font-weight: 400; font-display: swap; src: url("../fonts/newsreader-latin-ext-400-italic.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/newsreader-latin-600-normal.woff2") format("woff2"); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Newsreader"; font-style: normal; font-weight: 600; font-display: swap; src: url("../fonts/newsreader-latin-ext-600-normal.woff2") format("woff2"); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* Tokens ------------------------------------------------------------------ */
 :root {
   color-scheme: dark;
 
-  /* Black and mahogany */
-  --bg: #0c0908;
-  --bg-glow: #1f0e0a;
-  --mahogany: #5a2219;
-  --mahogany-bright: #7a3527;
-  --card-top: #421c15;
-  --card-bottom: #33160f;
-  --card-edge: #5a281e;
-  --rule: #2e1c18;
-  --rule-strong: #4a2820;
+  /* Espresso, walnut, leather */
+  --bg: #1e1813;
+  --lamp: rgba(214, 170, 112, 0.11);   /* warm glow at the top of the page */
+  --card-top: #3b2d22;
+  --card-bottom: #31251b;
+  --card-edge: #574333;
+  --rule: #3b2f25;
+  --rule-strong: #54412f;
+  --leather: #6e5137;
+  --leather-hover: #82613f;
 
-  /* Text */
-  --text: #f6f1eb;
-  --text-body: #ebe3db;
-  --text-muted: #c2b4ab;
-  --text-card: #d9cbc1;
-  --text-faint: #93847c;
-  --accent: #c98b74;   /* light mahogany: labels, dates, italic accents */
+  /* Parchment text, tobacco accent */
+  --text: #f4ecdf;
+  --text-body: #e9e0d0;
+  --text-muted: #cbbda7;
+  --text-card: #dfd3bf;
+  --text-faint: #a0907b;
+  --accent: #cfa877;
 
-  /* Type */
-  --font-display: "Cormorant Garamond", "EB Garamond", Garamond, "Times New Roman", serif;
-  --font-body: "EB Garamond", Garamond, Georgia, "Times New Roman", serif;
-  --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Newsreader", Georgia, "Times New Roman", serif;
 
   --measure: 62rem;
   --gutter: clamp(1rem, 4vw, 2rem);
@@ -74,19 +69,19 @@ body {
   margin: 0;
   min-height: 100vh;
   background:
-    radial-gradient(120% 60% at 50% 0%, var(--bg-glow) 0%, rgba(12, 9, 8, 0) 65%) no-repeat,
+    radial-gradient(90% 55% at 50% 0%, var(--lamp) 0%, rgba(30, 24, 19, 0) 70%) no-repeat,
     var(--bg);
   color: var(--text-body);
   font-family: var(--font-body);
   font-size: 1.1875rem;
-  line-height: 1.85;
+  line-height: 1.75;
   font-kerning: normal;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-::selection { background: var(--mahogany-bright); color: #fff; }
+::selection { background: var(--leather-hover); color: #fff; }
 
 a {
   color: var(--text);
@@ -114,58 +109,74 @@ img { display: block; max-width: 100%; height: auto; }
   left: var(--gutter);
   top: -4rem;
   padding: 0.6rem 1rem;
-  background: var(--mahogany);
+  background: var(--leather);
   color: var(--text);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
   text-decoration: none;
   z-index: 10;
 }
 
 .skip-link:focus { top: 1rem; }
 
-/* Shared mono label style */
+/* Small tracked capitals for labels, dates and nav */
 .label {
-  font-family: var(--font-mono);
-  font-weight: 400;
-  font-size: 0.78rem;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.74rem;
   line-height: 1.5;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: var(--accent);
 }
 
-/* Header ------------------------------------------------------------------ */
-.site-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1.5rem 3rem;
-  flex-wrap: wrap;
-  padding-block: clamp(2.5rem, 7vw, 4.75rem) clamp(1.75rem, 4vw, 2.5rem);
-  border-bottom: 1px solid var(--rule-strong);
+/* Diamond-on-a-rule ornament */
+.ornament {
+  position: relative;
+  width: min(16rem, 60%);
+  height: 1px;
+  margin: 1.4rem auto;
+  border: 0;
+  overflow: visible;
+  background: linear-gradient(90deg, transparent, var(--rule-strong) 25%, var(--rule-strong) 75%, transparent);
+}
+
+.ornament::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Masthead ---------------------------------------------------------------- */
+.masthead {
+  padding-block: clamp(2.75rem, 7vw, 4.5rem) 1.6rem;
+  border-bottom: 3px double var(--rule-strong);
+  text-align: center;
 }
 
 .wordmark {
+  margin: 0;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2.2rem, 5vw, 3.1rem);
+  font-size: clamp(2.6rem, 7vw, 4rem);
   line-height: 1;
-  letter-spacing: 0.005em;
+  letter-spacing: -0.01em;
   color: var(--text);
-  text-decoration: none;
 }
 
-.wordmark em {
-  font-style: italic;
-  color: var(--accent);
+.wordmark a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .site-nav ul {
   display: flex;
-  gap: clamp(1.5rem, 4vw, 2.75rem);
+  justify-content: center;
+  gap: clamp(1.5rem, 5vw, 2.75rem);
   margin: 0;
   padding: 0;
   list-style: none;
@@ -173,12 +184,12 @@ img { display: block; max-width: 100%; height: auto; }
 
 .site-nav a {
   display: inline-block;
-  padding-bottom: 0.4rem;
+  padding-bottom: 0.25rem;
   border-bottom: 1px solid transparent;
-  font-family: var(--font-mono);
+  font-weight: 600;
   font-size: 0.78rem;
-  line-height: 1;
-  letter-spacing: 0.2em;
+  line-height: 1.5;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--text-muted);
   text-decoration: none;
@@ -188,113 +199,126 @@ img { display: block; max-width: 100%; height: auto; }
 .site-nav a:hover { color: var(--text); }
 
 .site-nav a[aria-current="page"] {
-  color: var(--text);
-  border-bottom-color: var(--text);
+  color: var(--accent);
+  border-bottom-color: var(--accent);
 }
 
 /* Intro ------------------------------------------------------------------- */
 .intro {
   display: grid;
-  grid-template-columns: minmax(0, 19rem) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 18.5rem);
   gap: clamp(2.5rem, 7vw, 5rem);
-  align-items: start;
-  padding-block: clamp(3.5rem, 8vw, 5.75rem);
+  align-items: center;
+  padding-block: clamp(3rem, 8vw, 5.5rem);
 }
 
-.portrait { margin: 0; }
-
-.portrait img,
-.portrait-placeholder {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 2px;
-  box-shadow: 0 24px 50px -30px rgba(0, 0, 0, 0.9);
-}
-
-.portrait-placeholder {
-  display: grid;
-  place-items: center;
-  background: linear-gradient(160deg, #4a1f17 0%, #2a120d 55%, #160a08 100%);
-  border: 1px solid var(--card-edge);
-}
-
-.portrait-placeholder span {
-  font-family: var(--font-display);
-  font-style: italic;
-  font-size: 4.5rem;
-  line-height: 1;
-  color: var(--accent);
-  opacity: 0.85;
-}
-
-.portrait figcaption {
-  margin-top: 1.1rem;
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  color: var(--text-muted);
-}
-
-.intro h1 {
-  margin: 0 0 0.85rem;
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: clamp(2.2rem, 4.2vw, 2.9rem);
-  line-height: 1.1;
-  color: var(--text);
-}
-
-.tagline {
-  margin: 0 0 2.1rem;
-}
+.tagline { margin: 0 0 1.25rem; }
 
 .tagline .sep {
-  margin-inline: 0.55em;
+  margin-inline: 0.6em;
   color: var(--text-faint);
 }
 
-.intro-text p:not(.tagline) {
-  margin: 0 0 1.35rem;
+.lead {
+  margin: 0 0 1.1rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.6rem, 3.2vw, 2.1rem);
+  line-height: 1.28;
+  color: var(--text);
+  text-wrap: pretty;
 }
+
+.intro-text p:not(.tagline):not(.lead) { margin: 0 0 1.25rem; }
 
 .links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.85rem;
-  margin: 2.4rem 0 0;
+  gap: 0.75rem;
+  margin: 2rem 0 0;
   padding: 0;
   list-style: none;
 }
 
 .button {
   display: inline-block;
-  padding: 0.85rem 1.4rem;
+  padding: 0.55rem 1.35rem 0.6rem;
   border: 1px solid var(--rule-strong);
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  line-height: 1;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.4;
   color: var(--text);
   text-decoration: none;
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .button:hover {
-  background: var(--mahogany);
-  border-color: var(--mahogany-bright);
+  border-color: var(--leather-hover);
+  background: rgba(130, 97, 63, 0.25);
   color: #fff;
+}
+
+.button--solid {
+  background: var(--leather);
+  border-color: var(--leather);
+}
+
+.button--solid:hover {
+  background: var(--leather-hover);
+  border-color: var(--leather-hover);
+}
+
+/* Arched portrait */
+.portrait { margin: 0; }
+
+.portrait img {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 50% 50% 4px 4px / 37.5% 37.5% 4px 4px;
+  outline: 1px solid var(--rule-strong);
+  outline-offset: 7px;
+  box-shadow: 0 28px 50px -30px rgba(0, 0, 0, 0.8);
+}
+
+.portrait figcaption {
+  margin-top: 1.4rem;
+  font-style: italic;
+  font-size: 0.98rem;
+  text-align: center;
+  color: var(--text-muted);
 }
 
 /* Sections ---------------------------------------------------------------- */
 .section {
-  padding-block: clamp(3.5rem, 8vw, 5.5rem);
-  border-top: 1px solid var(--rule-strong);
+  padding-block: clamp(2.5rem, 6vw, 4rem);
 }
 
-.section > .label {
-  margin: 0 0 2.25rem;
+.section-title {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55em;
+  margin: 0 0 2rem;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(1.75rem, 3.4vw, 2.25rem);
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.section-title .numeral {
+  font-style: italic;
+  font-size: 0.8em;
+  color: var(--accent);
+}
+
+.section-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--rule-strong);
+  transform: translateY(-0.3em);
 }
 
 /* Research cards ---------------------------------------------------------- */
@@ -310,25 +334,22 @@ img { display: block; max-width: 100%; height: auto; }
 .card {
   display: flex;
   flex-direction: column;
-  padding: 1.6rem 1.65rem 1.8rem;
-  background: linear-gradient(165deg, var(--card-top) 0%, var(--card-bottom) 100%);
+  padding: 1.6rem 1.7rem 1.75rem;
+  background: linear-gradient(170deg, var(--card-top) 0%, var(--card-bottom) 100%);
   border: 1px solid var(--card-edge);
-  border-radius: 16px;
+  border-radius: 14px;
   box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.04),
-    0 18px 36px -24px rgba(0, 0, 0, 0.85);
+    inset 0 1px 0 rgba(255, 240, 220, 0.05),
+    0 16px 32px -24px rgba(0, 0, 0, 0.75);
 }
 
-.card .label {
-  margin: 0 0 0.9rem;
-  font-size: 0.7rem;
-}
+.card .label { margin: 0 0 0.7rem; }
 
 .card h3 {
-  margin: 0 0 0.55rem;
+  margin: 0 0 0.5rem;
   font-family: var(--font-display);
   font-weight: 500;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   color: var(--text);
 }
@@ -336,82 +357,78 @@ img { display: block; max-width: 100%; height: auto; }
 .card p:not(.label) {
   margin: 0;
   font-size: 1.06rem;
-  line-height: 1.65;
+  line-height: 1.6;
   color: var(--text-card);
 }
 
-/* CV ---------------------------------------------------------------------- */
-.cv-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: clamp(2.5rem, 7vw, 4.5rem);
-}
+/* CV ledger --------------------------------------------------------------- */
+.cv-block + .cv-block { margin-top: 2.75rem; }
 
-.cv-grid h3 {
-  margin: 0 0 1.85rem;
-  padding-bottom: 0.9rem;
-  border-bottom: 1px solid var(--rule-strong);
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 1.2;
-  color: var(--text);
-}
+.cv-block > .label { margin: 0 0 0.6rem; }
 
 .cv-list {
-  display: grid;
-  gap: 1.9rem;
   margin: 0;
   padding: 0;
   list-style: none;
+  border-top: 1px solid var(--rule-strong);
+}
+
+.cv-list li {
+  display: grid;
+  grid-template-columns: minmax(0, 16.5rem) minmax(0, 1fr);
+  gap: 0.15rem 2rem;
+  padding-block: 1.1rem;
+  border-bottom: 1px solid var(--rule);
 }
 
 .cv-list p { margin: 0; }
 
 .cv-list .date {
-  margin-bottom: 0.35rem;
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  letter-spacing: 0.1em;
-  color: var(--accent);
+  font-style: italic;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  font-variant-numeric: lining-nums tabular-nums;
 }
 
 .cv-list .title {
-  font-weight: 500;
-  font-size: 1.15rem;
+  font-weight: 600;
+  font-size: 1.12rem;
   line-height: 1.45;
   color: var(--text);
 }
 
 .cv-list .place {
-  font-style: italic;
-  font-size: 1.08rem;
+  font-size: 1.04rem;
+  line-height: 1.5;
   color: var(--text-muted);
 }
 
 /* Footer ------------------------------------------------------------------ */
 .site-footer {
-  padding-block: 2.5rem 3.5rem;
-  border-top: 1px solid var(--rule-strong);
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
+  padding-block: 1rem 3.5rem;
+  text-align: center;
+  font-style: italic;
+  font-size: 0.98rem;
   color: var(--text-faint);
 }
+
+.site-footer .ornament { margin-bottom: 1.25rem; }
 
 .site-footer p { margin: 0; }
 
 /* 404 --------------------------------------------------------------------- */
 .not-found {
-  padding-block: clamp(4rem, 12vw, 8rem);
+  padding-block: clamp(4rem, 12vw, 7rem);
+  text-align: center;
 }
 
 .not-found h1 {
-  margin: 0 0 1rem;
+  margin: 0.5rem 0 1rem;
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2.2rem, 5vw, 3rem);
-  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.15;
   color: var(--text);
 }
 
@@ -419,16 +436,18 @@ img { display: block; max-width: 100%; height: auto; }
 
 /* Small screens ----------------------------------------------------------- */
 @media (max-width: 760px) {
-  body { font-size: 1.125rem; line-height: 1.8; }
+  body { font-size: 1.125rem; }
 
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
+  .intro {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2.5rem;
   }
 
-  .intro { grid-template-columns: minmax(0, 1fr); }
+  .portrait {
+    order: -1;
+    width: min(100%, 15rem);
+    margin-inline: auto;
+  }
 
-  .portrait { max-width: 14rem; }
-
-  .cv-grid { grid-template-columns: minmax(0, 1fr); }
+  .cv-list li { grid-template-columns: minmax(0, 1fr); }
 }
