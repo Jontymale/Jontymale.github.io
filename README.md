@@ -25,7 +25,7 @@ marked with an `<!-- EDIT -->` comment, and placeholder text is in
 | `index.html` | Home page |
 | `404.html` | Not-found page |
 | `assets/css/style.css` | All styling |
-| `assets/fonts/` | Self-hosted Fraunces and Newsreader (SIL OFL) |
+| `assets/fonts/` | Self-hosted Libre Baskerville (SIL OFL) |
 | `CNAME` | Custom domain (`jontymale.com`) |
 
 ## Preview locally
